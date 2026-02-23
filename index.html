@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créateur de Listes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📋 Créateur de Listes</h1>
+        </header>
+
+        <section class="create-list">
+            <input type="text" id="newListTitle" placeholder="Titre de la nouvelle liste">
+            <button id="createListBtn">Créer</button>
+        </section>
+
+        <section id="listsContainer" class="lists"></section>
+
+        <section id="listDetail" class="list-detail hidden">
+            <button id="backBtn" class="back-btn">← Retour</button>
+            <h2 id="listTitle"></h2>
+
+            <div class="add-item">
+                <input type="text" id="newItemInput" placeholder="Nouvel élément">
+                <button id="addItemBtn">Ajouter</button>
+            </div>
+
+            <ul id="itemsContainer"></ul>
+        </section>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/listManager.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

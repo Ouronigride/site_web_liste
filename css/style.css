@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+}
+
+.create-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.create-list input {
+    flex: 1;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#createListBtn, #addItemBtn {
+    background: #4e73df;
+    color: white;
+}
+
+#createListBtn:hover, #addItemBtn:hover {
+    background: #2e59d9;
+}
+
+.lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.list-card {
+    background: #f8f9fc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.list-card:hover {
+    transform: translateY(-5px);
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: crimson;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+.list-detail {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.back-btn {
+    margin-bottom: 15px;
+    background: #858796;
+    color: white;
+}
+
+.add-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-item {
+    background: crimson;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+}
